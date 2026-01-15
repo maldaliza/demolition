@@ -2,19 +2,22 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>진주 철거 · 원상복구 견적 비교 | 모두의 철거(예시)</title>
+    <title>진주 철거 · 원상복구 견적 비교 | 한강고철</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- 분리된 CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <div class="nav-inner">
-        <a href="#top" class="logo">
-            <div class="logo-mark">철</div>
-            <div>모두의 철거 (예시)</div>
+        <a href="javascript:void(0);" class="logo" id="logo-scroll">
+            <img src="assets/images/Hangang_Logo.jpg" alt="한강고철" class="logo-img">
         </a>
         <nav>
             <ul>
@@ -66,7 +69,7 @@
                     이용 절차 먼저 볼게요
                 </a>
             </div>
-            <p class="hero-note">* 예시 페이지입니다. 실제 서비스 조건은 귀하의 업체 정책에 맞게 수정하세요.</p>
+            <!-- <p class="hero-note">* 예시 페이지입니다. 실제 서비스 조건은 귀하의 업체 정책에 맞게 수정하세요.</p> -->
         </div>
 
         <div class="hero-right">
@@ -411,11 +414,11 @@
 <footer>
     <div class="footer-inner">
         <div>
-            <strong>모두의 철거 (예시 랜딩 페이지)</strong><br>
-            실제 상호, 사업자등록번호, 주소, 연락처 등을 여기에 기입하세요.
+            <strong>한강고철</strong><br>
+            <span>대표자: 박다민</span>
         </div>
         <div class="footer-links">
-            <a href="#top">맨 위로</a>
+            <a href="javascript:void(0);" id="footer-top">맨 위로</a>
             <span>·</span>
             <a href="#faq">FAQ</a>
             <span>·</span>
@@ -424,5 +427,49 @@
     </div>
 </footer>
 
+<div class="floating-banner">
+    <a href="tel:010-5069-9139" class="float-item tel">
+        <span class="icon1">📞</span>
+        <span class="label">실시간<br>전화상담</span>
+    </a>
+    <a href="https://pf.kakao.com/..." target="_blank" class="float-item kakao">
+        <img src="assets/images/KakaoTalk_logo.svg" alt="카카오톡" class="float-img">
+        <span class="label">실시간<br>채팅상담</span>
+    </a>
+    <a href="https://blog.naver.com/lonely_fist" target="_blank" class="float-item blog">
+        <span class="icon2">blog</span>
+        <span class="label">블로그<br>바로가기</span>
+    </a>
+    <a href="javascript:void(0);" id="go-top" class="float-item top-btn">
+        <span class="label">TOP</span>
+    </a>
+</div>
+
 </body>
+<script>
+    document.getElementById('go-top').addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // 로고 클릭 시 최상단 이동 추가
+    document.getElementById('logo-scroll').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    //'맨 위로' 클릭 시 최상단 이동
+    document.getElementById('footer-top').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </html>
