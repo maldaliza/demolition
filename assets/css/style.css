@@ -817,10 +817,11 @@ footer .footer-inner {
     }
     .float-item {
         width: 60px;
-        height: 60px;
+        height: 80px;
         font-size: 10px;
     }
     .float-item.top-btn {
         height: 35px;
     }
 }
+
