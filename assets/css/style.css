@@ -813,30 +813,14 @@ footer .footer-inner {
 /* 모바일 대응 (화면이 작을 때 크기 조정) */
 @media (max-width: 768px) {
     .floating-banner {
-        right: 8px;   /* 화면 끝에 너무 붙지 않게 조정 */
-        bottom: 20%;  /* 위치를 조금 아래로 조정 */
-        transform: none; /* 모바일에서는 수직 중앙 정렬 해제하는 것이 배치하기 쉽습니다 */
+        right: 10px;
     }
-
     .float-item {
-        width: 65px;  /* 모바일에 적당한 너비 */
-        height: 80px; /* 기존 300px에서 80px로 수정 */
-        font-size: 11px;
-        padding: 5px;
-        border-radius: 8px; /* 모바일은 조금 더 둥글게 */
+        width: 60px;
+        height: 80px;
+        font-size: 10px;
     }
-
     .float-item.top-btn {
-        height: 35px; /* TOP 버튼 높이 유지 */
-    }
-
-    .float-img {
-        width: 30px;  /* 이미지(아이콘) 크기도 모바일에 맞춰 축소 */
-        margin-bottom: 4px;
+        height: 35px;
     }
 }
-
-
-
-
-
