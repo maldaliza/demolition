@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 :root {
     --primary: #1f6bff;
     --primary-dark: #1342a8;
@@ -17,10 +19,15 @@
 
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; */
+    /* font-family: 'Nanum Gothic', sans-serif;  */
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     background: white;
     color: var(--text-main);
     line-height: 1.6;
+    body {
+    margin: 0;
+}
 }
 
 a {
@@ -70,6 +77,14 @@ header {
     justify-content: center;
     color: white;
     font-size: 0.9rem;
+}
+
+.logo-img {
+    display: block;
+    /* 원하는 로고 크기에 따라 height 값을 조절하세요 (기존 32px 기준) */
+    height: 50px; 
+    width: auto;
+    object-fit: contain;
 }
 
 nav ul {
@@ -354,8 +369,8 @@ section {
 }
 
 .section-kicker {
-    font-size: 0.82rem;
-    font-weight: 700;
+    font-size: 2.0rem;
+    font-weight: 1000;
     color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -718,4 +733,94 @@ footer .footer-inner {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+}
+
+/* 플로팅 배너 스타일 */
+.floating-banner {
+    position: fixed;
+    right: 20px;
+    bottom: 30%;
+    transform: translateY(50%); /* 화면 세로 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 9999;
+}
+
+.float-item {
+    width: 80px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.float-item:hover {
+    transform: scale(1.05);
+}
+
+.float-item .icon1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.float-item .icon2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* 색상 설정 */
+.float-item.tel { 
+    background-color: #3b3486;  /* 남색 */
+ }
+.float-item.kakao { 
+    background-color: #FFE812; 
+    color: #3c1e1e;     /* 카카오 노랑 */
+} 
+.float-item.blog { 
+    background-color: #2db400;  /* 네이버 초록 */
+}
+.float-item.top-btn { 
+    background-color: #333; 
+    height: 40px; /* TOP 버튼은 조금 작게 */
+    margin-top: 5px;
+}
+
+.float-img {
+    width: 40px;      /* 이미지 너비 (배너 크기에 맞춰 조절) */
+    height: auto;     /* 비율 유지 */
+    margin-bottom: 6px; /* 아이콘과 텍스트 사이 간격 */
+    display: block;   /* 정렬을 위해 블록화 */
+}
+
+/* 기존 .float-item 내부 정렬 확인 */
+.float-item {
+    /* 기존 스타일 유지하면서 flex-direction이 column인지 확인 */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* 모바일 대응 (화면이 작을 때 크기 조정) */
+@media (max-width: 768px) {
+    .floating-banner {
+        right: 10px;
+    }
+    .float-item {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
+    .float-item.top-btn {
+        height: 35px;
+    }
 }
