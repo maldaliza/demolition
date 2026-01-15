@@ -21,14 +21,16 @@
         </a>
         <nav>
             <ul>
-                <li><a href="#how">이용안내</a></li>
-                <li><a href="#portfolio">시공사례</a></li>
-                <li><a href="#pricing">시공비 예시</a></li>
-                <li><a href="#reviews">이용후기</a></li>
-                <li><a href="#faq">자주 묻는 질문</a></li>
+                <!-- <li><a href="#how">이용안내</a></li> -->
+                <li><a href="javascript:void(0);" id="how">이용안내</a></li>
+                <li><a href="javascript:void(0);" id="portfolio">시공사례</a></li>
+                <li><a href="javascript:void(0);" id="pricing">시공비 예시</a></li>
+                <li><a href="javascript:void(0);" id="reviews">이용후기</a></li>
+                <li><a href="javascript:void(0);" id="faq">자주 묻는 질문</a></li>
                 <li>
                     <!-- 여기 링크를 실제 Tally / 폼 주소로 교체 -->
-                    <a href="https://tally.so" target="_blank" class="nav-cta" rel="noopener">
+                    <!-- <a href="https://tally.so" target="_blank" class="nav-cta" rel="noopener"> -->
+                    <a href="tel:010-5069-9139" target="_blank" class="nav-cta" rel="noopener">
                         무료 견적 신청
                     </a>
                 </li>
@@ -401,12 +403,15 @@
             </p>
         </div>
         <div class="cta-right">
-            <a class="btn-primary" href="https://tally.so" target="_blank" rel="noopener">
-                1분 만에 무료 견적 신청하기
+            <!-- <a class="btn-primary" href="https://tally.so" target="_blank" rel="noopener">
+                무료 견적 신청하기
+            </a> -->
+            <a class="btn-primary" href="tel:010-5069-9139" target="_blank" rel="noopener">
+                무료 견적 신청하기
             </a>
-            <div class="cta-note">
+            <!-- <div class="cta-note">
                 * 이 버튼 링크를 실제 Tally/폼 URL로 바꿔 사용하세요.
-            </div>
+            </div> -->
         </div>
     </section>
 </main>
@@ -418,11 +423,11 @@
             <span>대표자: 박다민</span>
         </div>
         <div class="footer-links">
-            <a href="javascript:void(0);" id="footer-top">맨 위로</a>
-            <span>·</span>
+            <a href="javascript:void(0);" id="footer-top"><strong>↑</strong></a>
+            <!-- <span>·</span>
             <a href="#faq">FAQ</a>
             <span>·</span>
-            <a href="#contact">문의</a>
+            <a href="#contact">문의</a> -->
         </div>
     </div>
 </footer>
@@ -468,6 +473,51 @@
         e.preventDefault(); // 기본 링크 동작 방지
         window.scrollTo({
             top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    //'이용 안내' 클릭 시 위치 이동
+    document.getElementById('how').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 1400,
+            behavior: 'smooth'
+        });
+    });
+
+    //'시공 사례' 클릭 시 위치 이동
+    document.getElementById('portfolio').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 2250,
+            behavior: 'smooth'
+        });
+    });
+
+    //'시공비 예시' 클릭 시 위치 이동
+    document.getElementById('pricing').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 2530,
+            behavior: 'smooth'
+        });
+    });
+
+    //'이용 후기' 클릭 시 위치 이동
+    document.getElementById('reviews').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 2900,
+            behavior: 'smooth'
+        });
+    });
+
+    //'FAQ' 클릭 시 위치 이동
+    document.getElementById('faq').addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 링크 동작 방지
+        window.scrollTo({
+            top: 3300,
             behavior: 'smooth'
         });
     });
