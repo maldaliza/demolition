@@ -414,6 +414,14 @@
             </div> -->
         </div>
     </section>
+
+    <section id="map-section" style="padding: 50px 20px; background-color: #f9f9f9;">
+        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+            <div class="section-kicker">오시는 길</div>
+            <h2 class="section-title">한강고철 위치 안내</h2>
+        </div>
+        <div id="map" style="width:100%; max-width:1200px; height:400px; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+    </section>
 </main>
 
 <footer>
@@ -451,6 +459,46 @@
 </div>
 
 </body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d626426339fe5291bc20cd491822cb4"></script>
+
+<script>
+    // 1. 카카오맵 초기화
+    var mapContainer = document.getElementById('map'), 
+        mapOption = { 
+            center: new kakao.maps.LatLng(35.1764, 128.1068), // 진주 시청 근처 예시 좌표
+            level: 3 
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+    // 2. 마커 표시
+    var markerPosition  = new kakao.maps.LatLng(35.1764, 128.1068); 
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+    marker.setMap(map);
+
+    // 3. 인포윈도우 (선택 사항: 클릭 시 이름 표시)
+    var iwContent = '<div style="padding:5px; font-size:14px; text-align:center;">한강고철</div>',
+        iwRemoveable = true;
+
+    var infowindow = new kakao.maps.InfoWindow({
+        content : iwContent,
+        removable : iwRemoveable
+    });
+    
+    // 마커 클릭 시 인포윈도우 표시
+    kakao.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map, marker);  
+    });
+
+    // --- 기존 스크립트 유지 ---
+    document.getElementById('go-top').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // ... 나머지 기존 스크립트 코드 ...
+</script>
+
 <script>
     document.getElementById('go-top').addEventListener('click', function() {
         window.scrollTo({
