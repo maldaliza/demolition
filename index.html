@@ -419,41 +419,37 @@
       // -------------------------
       // (B) Kakao Map init
       // -------------------------
-      if (window.kakao && kakao.maps && typeof kakao.maps.load === 'function') {
+      if (typeof kakao !== 'undefined' && kakao.maps) {
         kakao.maps.load(function () {
-          const mapContainer = document.getElementById('map');
-          if (!mapContainer) return;
+            const mapContainer = document.getElementById('map');
+            if (!mapContainer) return;
 
-          const center = new kakao.maps.LatLng(35.1764, 128.1068);
+            const center = new kakao.maps.LatLng(35.1764, 128.1068);
+            const mapOption = {
+                center: center,
+                level: 3
+            };
 
-          const mapOption = {
-            center: center,
-            level: 3
-          };
+            const map = new kakao.maps.Map(mapContainer, mapOption);
+            const marker = new kakao.maps.Marker({ position: center });
+            marker.setMap(map);
 
-          const map = new kakao.maps.Map(mapContainer, mapOption);
+            const iwContent = '<div style="padding:10px; font-size:14px; text-align:center; min-width:150px;">한강고철</div>';
+            const infowindow = new kakao.maps.InfoWindow({
+                content: iwContent,
+                removable: true
+            });
 
-          const marker = new kakao.maps.Marker({ position: center });
-          marker.setMap(map);
-
-          const iwContent = '<div style="padding:10px; font-size:14px; text-align:center; min-width:150px;">한강고철</div>';
-          const infowindow = new kakao.maps.InfoWindow({
-            content: iwContent,
-            removable: true
-          });
-
-          kakao.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
-          });
+            kakao.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
         });
       } else {
-        // SDK가 로드되지 않았을 때 콘솔에서 바로 원인 찾기 좋게
-        console.error('Kakao Maps SDK가 로드되지 않았습니다. appkey/도메인 등록/스크립트 로딩을 확인하세요.');
+        console.error('Kakao SDK 로드 실패: 스크립트 주소나 앱키를 다시 확인하세요.');
       }
     });
   </script>
 </body>
 </html>
-
 
 
