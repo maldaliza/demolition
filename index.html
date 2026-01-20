@@ -1,573 +1,456 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>진주 철거 · 원상복구 견적 비교 | 한강고철</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>진주 철거 · 원상복구 견적 비교 | 한강고철</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 분리된 CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 분리된 CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-
-<header>
+  <header>
     <div class="nav-inner">
-        <a href="javascript:void(0);" class="logo" id="logo-scroll">
-            <img src="assets/images/Hangang_Logo.jpg" alt="한강고철" class="logo-img">
-        </a>
-        <nav>
-            <ul>
-                <!-- <li><a href="#how">이용안내</a></li> -->
-                <li><a href="javascript:void(0);" id="how">이용안내</a></li>
-                <li><a href="javascript:void(0);" id="portfolio">시공사례</a></li>
-                <li><a href="javascript:void(0);" id="pricing">시공비 예시</a></li>
-                <li><a href="javascript:void(0);" id="reviews">이용후기</a></li>
-                <li><a href="javascript:void(0);" id="faq">자주 묻는 질문</a></li>
-                <li>
-                    <!-- 여기 링크를 실제 Tally / 폼 주소로 교체 -->
-                    <!-- <a href="https://tally.so" target="_blank" class="nav-cta" rel="noopener"> -->
-                    <a href="tel:010-5069-9139" target="_blank" class="nav-cta" rel="noopener">
-                        무료 견적 신청
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <a href="#top" class="logo" id="logo-scroll">
+        <img src="assets/images/Hangang_Logo.jpg" alt="한강고철" class="logo-img" />
+      </a>
+      <nav>
+        <ul>
+          <!-- ✅ 메뉴는 section id로 이동하게 href를 통일 (ID 중복 제거) -->
+          <li><a href="#how" class="js-scroll">이용안내</a></li>
+          <li><a href="#portfolio" class="js-scroll">시공사례</a></li>
+          <li><a href="#pricing" class="js-scroll">시공비 예시</a></li>
+          <li><a href="#reviews" class="js-scroll">이용후기</a></li>
+          <li><a href="#faq" class="js-scroll">자주 묻는 질문</a></li>
+          <li>
+            <a href="tel:010-5069-9139" class="nav-cta" rel="noopener">
+              무료 견적 신청
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<main id="top">
+  <main id="top">
     <!-- HERO -->
     <section class="hero">
-        <div>
-            <div class="hero-eyebrow">
-                <span>진주 철거 · 원상복구</span>
-                <span>비교 견적 한 번에</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="highlight">처음 받은 견적</span> 그대로,<br>
-                끝까지 책임지는 철거 서비스
-            </h1>
-            <p class="hero-sub">
-                전화 돌리며 견적 받느라 시간 쓰지 말고,<br>
-                한 번의 신청으로 지역 철거업체 3곳 이상 견적을 한 번에 비교하세요.<br>
-                현장 방문 후 확정 견적, 시공 완료까지 매니저가 함께합니다.
-            </p>
+      <div>
+        <div class="hero-eyebrow">
+          <span>진주 철거 · 원상복구</span>
+          <span>비교 견적 한 번에</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="highlight">처음 받은 견적</span> 그대로,<br />
+          끝까지 책임지는 철거 서비스
+        </h1>
+        <p class="hero-sub">
+          전화 돌리며 견적 받느라 시간 쓰지 말고,<br />
+          한 번의 신청으로 지역 철거업체 3곳 이상 견적을 한 번에 비교하세요.<br />
+          현장 방문 후 확정 견적, 시공 완료까지 매니저가 함께합니다.
+        </p>
 
-            <div class="hero-badges">
-                <div class="hero-badge">누적 시공 700건+ (예시 수치)</div>
-                <div class="hero-badge">검증된 파트너 중심 매칭</div>
-                <div class="hero-badge">추가금 없는 확정 견적 제도</div>
-            </div>
-
-            <div class="hero-actions">
-                <a class="btn-primary" href="https://tally.so" target="_blank" rel="noopener">
-                    추가금 없는 무료 견적 받기
-                </a>
-                <a class="btn-secondary" href="#how">
-                    이용 절차 먼저 볼게요
-                </a>
-            </div>
-            <!-- <p class="hero-note">* 예시 페이지입니다. 실제 서비스 조건은 귀하의 업체 정책에 맞게 수정하세요.</p> -->
+        <div class="hero-badges">
+          <div class="hero-badge">누적 시공 700건+ (예시 수치)</div>
+          <div class="hero-badge">검증된 파트너 중심 매칭</div>
+          <div class="hero-badge">추가금 없는 확정 견적 제도</div>
         </div>
 
-        <div class="hero-right">
-            <div class="hero-card">
-                <div class="hero-card-title">최근 30일, 진주 철거 요청</div>
-                <div class="hero-card-sub">상가 · 원룸 · 주택 등 다양한 철거/원상복구 문의</div>
-
-                <div class="hero-card-row">
-                    <span>평균 절감 비율</span>
-                    <strong>약 13% 비용 절감 (예시)</strong>
-                </div>
-                <div class="hero-card-row">
-                    <span>평균 응답 시간</span>
-                    <span>평일 기준 2시간 이내</span>
-                </div>
-                <div class="hero-card-row">
-                    <span>추가 금액 청구</span>
-                    <span>사전 안내 없으면 0원 정책</span>
-                </div>
-
-                <div class="hero-tag">
-                    ✓ 현장 방문 후 확정 견적 · 계약서 제공
-                </div>
-            </div>
-
-            <div class="hero-floating">
-                지금까지 <span class="num">700+</span> 현장,
-                사고 없이 마무리 (예시)
-            </div>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://tally.so" target="_blank" rel="noopener">
+            추가금 없는 무료 견적 받기
+          </a>
+          <a class="btn-secondary js-scroll" href="#how">
+            이용 절차 먼저 볼게요
+          </a>
         </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-title">최근 30일, 진주 철거 요청</div>
+          <div class="hero-card-sub">상가 · 원룸 · 주택 등 다양한 철거/원상복구 문의</div>
+
+          <div class="hero-card-row">
+            <span>평균 절감 비율</span>
+            <strong>약 13% 비용 절감 (예시)</strong>
+          </div>
+          <div class="hero-card-row">
+            <span>평균 응답 시간</span>
+            <span>평일 기준 2시간 이내</span>
+          </div>
+          <div class="hero-card-row">
+            <span>추가 금액 청구</span>
+            <span>사전 안내 없으면 0원 정책</span>
+          </div>
+
+          <div class="hero-tag">✓ 현장 방문 후 확정 견적 · 계약서 제공</div>
+        </div>
+
+        <div class="hero-floating">
+          지금까지 <span class="num">700+</span> 현장,
+          사고 없이 마무리 (예시)
+        </div>
+      </div>
     </section>
 
     <!-- STATS -->
     <section>
-        <div class="stats">
-            <div class="stat-card">
-                <div class="stat-pill">누적 시공</div>
-                <div class="stat-label">완료된 철거/원상복구</div>
-                <div class="stat-value">700+</div>
-                <div class="stat-desc">각종 상가, 프랜차이즈, 주택 등 다양한 현장 기준 (예시 수치)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-pill">파트너사</div>
-                <div class="stat-label">검증 통과 업체 수</div>
-                <div class="stat-value">130+</div>
-                <div class="stat-desc">사업자 등록 · 보험 · 시공 이력까지 확인한 지역 업체 (예시 수치)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-pill">만족도</div>
-                <div class="stat-label">이용 고객 평균 평가</div>
-                <div class="stat-value">4.9 / 5.0</div>
-                <div class="stat-desc">시공 마감 상태와 소통 만족도 기반 (예시 수치)</div>
-            </div>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-pill">누적 시공</div>
+          <div class="stat-label">완료된 철거/원상복구</div>
+          <div class="stat-value">700+</div>
+          <div class="stat-desc">각종 상가, 프랜차이즈, 주택 등 다양한 현장 기준 (예시 수치)</div>
         </div>
+        <div class="stat-card">
+          <div class="stat-pill">파트너사</div>
+          <div class="stat-label">검증 통과 업체 수</div>
+          <div class="stat-value">130+</div>
+          <div class="stat-desc">사업자 등록 · 보험 · 시공 이력까지 확인한 지역 업체 (예시 수치)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-pill">만족도</div>
+          <div class="stat-label">이용 고객 평균 평가</div>
+          <div class="stat-value">4.9 / 5.0</div>
+          <div class="stat-desc">시공 마감 상태와 소통 만족도 기반 (예시 수치)</div>
+        </div>
+      </div>
     </section>
 
     <!-- PAIN POINTS -->
     <section id="pain">
-        <div class="section-header">
-            <div class="section-kicker">이런 경험 있으셨나요?</div>
-            <h2 class="section-title">잘못 고른 철거업체, 한 번으로도 충분히 힘듭니다</h2>
-            <p class="section-sub">
-                견적은 제각각, 일정은 밀리고, 공사 끝난 뒤에야 들리는 추가비용 이야기.<br>
-                철거는 한 번뿐인 일인데, 실패할 여유가 없죠.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">이런 경험 있으셨나요?</div>
+        <h2 class="section-title">잘못 고른 철거업체, 한 번으로도 충분히 힘듭니다</h2>
+        <p class="section-sub">
+          견적은 제각각, 일정은 밀리고, 공사 끝난 뒤에야 들리는 추가비용 이야기.<br />
+          철거는 한 번뿐인 일인데, 실패할 여유가 없죠.
+        </p>
+      </div>
 
-        <div class="pain-grid">
-            <div class="pain-card">
-                <div class="pain-icon">₩</div>
-                <div class="pain-title">대충 말해주는 견적</div>
-                <div class="pain-text">“대략 이 정도요”로 시작했다가, 막상 공사 들어가면 금액이 점점 올라가는 경우.</div>
-            </div>
-            <div class="pain-card">
-                <div class="pain-icon">⚠️</div>
-                <div class="pain-title">과한 선수금 요구</div>
-                <div class="pain-text">계약 전부터 큰 금액을 요구해놓고, 시공 퀄리티는 기대에 못 미치는 상황.</div>
-            </div>
-            <div class="pain-card">
-                <div class="pain-icon">⏰</div>
-                <div class="pain-title">일정 지연 · 연락 두절</div>
-                <div class="pain-text">오픈 일정, 인수인계가 걸려 있는데 약속한 날짜를 맞추지 못해 곤란한 경우.</div>
-            </div>
-            <div class="pain-card">
-                <div class="pain-icon">➕</div>
-                <div class="pain-title">공사 중 추가금 폭탄</div>
-                <div class="pain-text">“생각보다 일이 많네요”라는 말과 함께 도면에도 없던 금액이 붙는 경우.</div>
-            </div>
-            <div class="pain-card">
-                <div class="pain-icon">💵</div>
-                <div class="pain-title">현금 결제만 강요</div>
-                <div class="pain-text">세금계산서나 카드 결제가 안 돼서 비용 처리에 애를 먹는 일.</div>
-            </div>
-            <div class="pain-card">
-                <div class="pain-icon">📄</div>
-                <div class="pain-title">서류 업무 떠넘기기</div>
-                <div class="pain-text">철거 신고, 폐기물 처리 확인서 등 행정 절차를 모두 직접 알아봐야 하는 스트레스.</div>
-            </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">₩</div>
+          <div class="pain-title">대충 말해주는 견적</div>
+          <div class="pain-text">“대략 이 정도요”로 시작했다가, 막상 공사 들어가면 금액이 점점 올라가는 경우.</div>
         </div>
+        <div class="pain-card">
+          <div class="pain-icon">⚠️</div>
+          <div class="pain-title">과한 선수금 요구</div>
+          <div class="pain-text">계약 전부터 큰 금액을 요구해놓고, 시공 퀄리티는 기대에 못 미치는 상황.</div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">⏰</div>
+          <div class="pain-title">일정 지연 · 연락 두절</div>
+          <div class="pain-text">오픈 일정, 인수인계가 걸려 있는데 약속한 날짜를 맞추지 못해 곤란한 경우.</div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">➕</div>
+          <div class="pain-title">공사 중 추가금 폭탄</div>
+          <div class="pain-text">“생각보다 일이 많네요”라는 말과 함께 도면에도 없던 금액이 붙는 경우.</div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">💵</div>
+          <div class="pain-title">현금 결제만 강요</div>
+          <div class="pain-text">세금계산서나 카드 결제가 안 돼서 비용 처리에 애를 먹는 일.</div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📄</div>
+          <div class="pain-title">서류 업무 떠넘기기</div>
+          <div class="pain-text">철거 신고, 폐기물 처리 확인서 등 행정 절차를 모두 직접 알아봐야 하는 스트레스.</div>
+        </div>
+      </div>
     </section>
 
     <!-- HOW IT WORKS -->
     <section id="how">
-        <div class="section-header">
-            <div class="section-kicker">이용 안내</div>
-            <h2 class="section-title">복잡했던 철거, 4단계로 단순하게</h2>
-            <p class="section-sub">
-                원클릭 신청으로부터 철거 완료까지, 전담 매니저가 옆에서 도와드립니다.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">이용 안내</div>
+        <h2 class="section-title">복잡했던 철거, 4단계로 단순하게</h2>
+        <p class="section-sub">원클릭 신청으로부터 철거 완료까지, 전담 매니저가 옆에서 도와드립니다.</p>
+      </div>
 
-        <div class="steps">
-            <div class="step">
-                <div class="step-index">1</div>
-                <div class="step-title">온라인 간편 신청</div>
-                <div class="step-text">
-                    점포 종류, 면적, 위치, 사진만 올려주시면 평균 1분 내로 접수 완료. 복잡한 전화 설명은 생략하세요.
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-index">2</div>
-                <div class="step-title">현장 방문 · 확정 견적</div>
-                <div class="step-text">
-                    지역 파트너 3곳 이상이 현장을 확인하고, 실제 공사 기준의 확정 견적을 제시합니다.
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-index">3</div>
-                <div class="step-title">업체 선택 · 계약</div>
-                <div class="step-text">
-                    견적·일정·포트폴리오를 비교한 뒤, 가장 조건이 맞는 곳을 선택하시면 됩니다.
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-index">4</div>
-                <div class="step-title">시공 진행 · 마감 케어</div>
-                <div class="step-text">
-                    공사 전·중·후에 전담 매니저가 상태를 점검하고, 문제 발생 시 조정·A/S까지 함께합니다.
-                </div>
-            </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-index">1</div>
+          <div class="step-title">온라인 간편 신청</div>
+          <div class="step-text">점포 종류, 면적, 위치, 사진만 올려주시면 평균 1분 내로 접수 완료. 복잡한 전화 설명은 생략하세요.</div>
         </div>
+        <div class="step">
+          <div class="step-index">2</div>
+          <div class="step-title">현장 방문 · 확정 견적</div>
+          <div class="step-text">지역 파트너 3곳 이상이 현장을 확인하고, 실제 공사 기준의 확정 견적을 제시합니다.</div>
+        </div>
+        <div class="step">
+          <div class="step-index">3</div>
+          <div class="step-title">업체 선택 · 계약</div>
+          <div class="step-text">견적·일정·포트폴리오를 비교한 뒤, 가장 조건이 맞는 곳을 선택하시면 됩니다.</div>
+        </div>
+        <div class="step">
+          <div class="step-index">4</div>
+          <div class="step-title">시공 진행 · 마감 케어</div>
+          <div class="step-text">공사 전·중·후에 전담 매니저가 상태를 점검하고, 문제 발생 시 조정·A/S까지 함께합니다.</div>
+        </div>
+      </div>
     </section>
 
     <!-- FEATURES -->
     <section>
-        <div class="section-header">
-            <div class="section-kicker">왜 이 서비스인가</div>
-            <h2 class="section-title">비용, 안전, 소통까지 한 번에 잡는 철거 매칭</h2>
-            <p class="section-sub">
-                검증된 파트너와 투명한 구조로, “싸고 불안한 철거” 대신 “합리적인 안심 철거”를 설계합니다.
-            </p>
+      <div class="section-header">
+        <div class="section-kicker">왜 이 서비스인가</div>
+        <h2 class="section-title">비용, 안전, 소통까지 한 번에 잡는 철거 매칭</h2>
+        <p class="section-sub">검증된 파트너와 투명한 구조로, “싸고 불안한 철거” 대신 “합리적인 안심 철거”를 설계합니다.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-tag">비용</div>
+          <div class="feature-title">업계 최저 수준의 중개 수수료 구조</div>
+          <div class="feature-text">과도한 마진 대신, 최소 수수료로 운영해 실제 공사비를 낮추는 구조입니다.</div>
+          <ul class="feature-list">
+            <li>여러 업체 동시 입찰로 과한 견적 자동 정리</li>
+            <li>현장 기준 확정 견적 → 공사 중 임의 인상 방지</li>
+            <li>선수금·중도금 등 결제 조건 사전 안내</li>
+          </ul>
         </div>
 
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="feature-tag">비용</div>
-                <div class="feature-title">업계 최저 수준의 중개 수수료 구조</div>
-                <div class="feature-text">
-                    과도한 마진 대신, 최소 수수료로 운영해 실제 공사비를 낮추는 구조입니다.
-                </div>
-                <ul class="feature-list">
-                    <li>여러 업체 동시 입찰로 과한 견적 자동 정리</li>
-                    <li>현장 기준 확정 견적 → 공사 중 임의 인상 방지</li>
-                    <li>선수금·중도금 등 결제 조건 사전 안내</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-tag">안전 · 책임</div>
-                <div class="feature-title">검증된 파트너사 + 전담 매니저</div>
-                <div class="feature-text">
-                    사업자, 보험, 시공 이력, 평가 등을 기준으로 파트너를 선별하고, 매니저가 과정 전체를 관리합니다.
-                </div>
-                <ul class="feature-list">
-                    <li>철거 · 폐기물 처리 관련 인허가 여부 확인</li>
-                    <li>공사 중 이슈 발생 시 매니저가 1차 조율</li>
-                    <li>마감 상태 불만족 시 A/S 연계 (조건 협의)</li>
-                </ul>
-            </div>
+        <div class="feature-card">
+          <div class="feature-tag">안전 · 책임</div>
+          <div class="feature-title">검증된 파트너사 + 전담 매니저</div>
+          <div class="feature-text">사업자, 보험, 시공 이력, 평가 등을 기준으로 파트너를 선별하고, 매니저가 과정 전체를 관리합니다.</div>
+          <ul class="feature-list">
+            <li>철거 · 폐기물 처리 관련 인허가 여부 확인</li>
+            <li>공사 중 이슈 발생 시 매니저가 1차 조율</li>
+            <li>마감 상태 불만족 시 A/S 연계 (조건 협의)</li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section id="portfolio">
-        <div class="section-header">
-            <div class="section-kicker">시공 사례 (예시)</div>
-            <h2 class="section-title">프랜차이즈부터 동네 상가까지, 다양한 현장 경험</h2>
-            <p class="section-sub">
-                실제 서비스에서는 여기 영역에 귀하의 포트폴리오 로고나 시공 사진을 배치하면 됩니다.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">시공 사례 (예시)</div>
+        <h2 class="section-title">프랜차이즈부터 동네 상가까지, 다양한 현장 경험</h2>
+        <p class="section-sub">실제 서비스에서는 여기 영역에 귀하의 포트폴리오 로고나 시공 사진을 배치하면 됩니다.</p>
+      </div>
 
-        <div class="logo-strip">
-            <div class="logo-pill">프랜차이즈 카페 철거</div>
-            <div class="logo-pill">치과 · 병원 원상복구</div>
-            <div class="logo-pill">헬스장 · PT샵 철거</div>
-            <div class="logo-pill">소형 사무실 철거</div>
-            <div class="logo-pill">주택 · 빌라 내부 철거</div>
-        </div>
+      <div class="logo-strip">
+        <div class="logo-pill">프랜차이즈 카페 철거</div>
+        <div class="logo-pill">치과 · 병원 원상복구</div>
+        <div class="logo-pill">헬스장 · PT샵 철거</div>
+        <div class="logo-pill">소형 사무실 철거</div>
+        <div class="logo-pill">주택 · 빌라 내부 철거</div>
+      </div>
     </section>
 
-    <!-- PRICING-LIKE SECTION -->
+    <!-- PRICING -->
     <section id="pricing">
-        <div class="section-header">
-            <div class="section-kicker">시공비 예시 (가이드)</div>
-            <h2 class="section-title">면적 · 난이도에 따라 달라지는 예상 비용</h2>
-            <p class="section-sub">
-                아래 금액은 예시일 뿐이며, 실제 견적은 현장 방문 후 확정됩니다.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">시공비 예시 (가이드)</div>
+        <h2 class="section-title">면적 · 난이도에 따라 달라지는 예상 비용</h2>
+        <p class="section-sub">아래 금액은 예시일 뿐이며, 실제 견적은 현장 방문 후 확정됩니다.</p>
+      </div>
 
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <div class="pricing-title">소형 상가 (10~15평)</div>
-                <div class="pricing-range">약 80만 ~ 150만</div>
-                <div class="pricing-note">
-                    간단한 내부 철거 + 바닥/벽 마감 일부 철거 기준 예시.
-                </div>
-            </div>
-            <div class="pricing-card">
-                <div class="pricing-title">중형 상가 (20~30평)</div>
-                <div class="pricing-range">약 150만 ~ 300만</div>
-                <div class="pricing-note">
-                    간판, 설비, 집기 철거 및 폐기물 처리 포함 예시.
-                </div>
-            </div>
-            <div class="pricing-card">
-                <div class="pricing-title">대형 상가/체육시설</div>
-                <div class="pricing-range">별도 실사 후 견적</div>
-                <div class="pricing-note">
-                    층고, 구조물, 설비 양에 따라 비용 차이가 커 현장 방문 후 안내.
-                </div>
-            </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-title">소형 상가 (10~15평)</div>
+          <div class="pricing-range">약 80만 ~ 150만</div>
+          <div class="pricing-note">간단한 내부 철거 + 바닥/벽 마감 일부 철거 기준 예시.</div>
         </div>
+        <div class="pricing-card">
+          <div class="pricing-title">중형 상가 (20~30평)</div>
+          <div class="pricing-range">약 150만 ~ 300만</div>
+          <div class="pricing-note">간판, 설비, 집기 철거 및 폐기물 처리 포함 예시.</div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-title">대형 상가/체육시설</div>
+          <div class="pricing-range">별도 실사 후 견적</div>
+          <div class="pricing-note">층고, 구조물, 설비 양에 따라 비용 차이가 커 현장 방문 후 안내.</div>
+        </div>
+      </div>
     </section>
 
     <!-- REVIEWS -->
     <section id="reviews">
-        <div class="section-header">
-            <div class="section-kicker">고객 후기 (예시)</div>
-            <h2 class="section-title">“철거 때문에 머리 싸매던 시간을 아꼈어요.”</h2>
-            <p class="section-sub">
-                실제 서비스에서는 고객 후기 캡처 또는 리뷰 텍스트를 이 영역에 배치하면 됩니다.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">고객 후기 (예시)</div>
+        <h2 class="section-title">“철거 때문에 머리 싸매던 시간을 아꼈어요.”</h2>
+        <p class="section-sub">실제 서비스에서는 고객 후기 캡처 또는 리뷰 텍스트를 이 영역에 배치하면 됩니다.</p>
+      </div>
 
-        <div class="testimonials">
-            <div class="testimonial">
-                <div class="testimonial-body">
-                    장비 반출, 폐기물 처리, 일정 조율까지 신경 쓸 게 한두 가지가 아니었는데,
-                    매니저가 중간에서 잘 정리해줘서 수월하게 마무리했습니다.
-                </div>
-                <div class="testimonial-meta">
-                    진주 ○○치과 · 상가 철거
-                </div>
-                <div class="testimonial-tag">
-                    #일정 준수 #행정 지원
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-body">
-                    여러 업체 견적 비교할 자신이 없었는데, 한 번에 정리된 견적을 받아보니
-                    선택이 훨씬 쉬웠습니다. 오픈 일정 맞춰줘서 감사했어요.
-                </div>
-                <div class="testimonial-meta">
-                    실내 테니스장 · 원상복구
-                </div>
-                <div class="testimonial-tag">
-                    #비교견적 #합리적인 비용
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-body">
-                    처음 폐업이라 멘붕이었는데, 철거 지원금부터 신고 서류까지 안내를 잘 해줘서
-                    생각보다 단순하게 정리할 수 있었습니다.
-                </div>
-                <div class="testimonial-meta">
-                    소규모 자영업 · 점포 철거
-                </div>
-                <div class="testimonial-tag">
-                    #초보 사장님 #친절 안내
-                </div>
-            </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-body">
+            장비 반출, 폐기물 처리, 일정 조율까지 신경 쓸 게 한두 가지가 아니었는데,
+            매니저가 중간에서 잘 정리해줘서 수월하게 마무리했습니다.
+          </div>
+          <div class="testimonial-meta">진주 ○○치과 · 상가 철거</div>
+          <div class="testimonial-tag">#일정 준수 #행정 지원</div>
         </div>
+        <div class="testimonial">
+          <div class="testimonial-body">
+            여러 업체 견적 비교할 자신이 없었는데, 한 번에 정리된 견적을 받아보니
+            선택이 훨씬 쉬웠습니다. 오픈 일정 맞춰줘서 감사했어요.
+          </div>
+          <div class="testimonial-meta">실내 테니스장 · 원상복구</div>
+          <div class="testimonial-tag">#비교견적 #합리적인 비용</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-body">
+            처음 폐업이라 멘붕이었는데, 철거 지원금부터 신고 서류까지 안내를 잘 해줘서
+            생각보다 단순하게 정리할 수 있었습니다.
+          </div>
+          <div class="testimonial-meta">소규모 자영업 · 점포 철거</div>
+          <div class="testimonial-tag">#초보 사장님 #친절 안내</div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ -->
     <section id="faq">
-        <div class="section-header">
-            <div class="section-kicker">FAQ</div>
-            <h2 class="section-title">자주 묻는 질문</h2>
-            <p class="section-sub">
-                실제 서비스 정책에 맞게 아래 문구를 자유롭게 수정해 사용하시면 됩니다.
-            </p>
-        </div>
+      <div class="section-header">
+        <div class="section-kicker">FAQ</div>
+        <h2 class="section-title">자주 묻는 질문</h2>
+        <p class="section-sub">실제 서비스 정책에 맞게 아래 문구를 자유롭게 수정해 사용하시면 됩니다.</p>
+      </div>
 
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-q">견적 신청은 무료인가요?</div>
-                <div class="faq-a">
-                    네, 온라인 견적 신청은 무료입니다. 현장 방문까지 포함해 비용이 발생하지 않도록 설계하는 것이 일반적입니다.
-                    실제 정책은 귀하의 서비스 조건에 맞게 수정하세요.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">추가 비용은 언제 발생하나요?</div>
-                <div class="faq-a">
-                    도면과 현장이 크게 다른 경우, 숨겨진 구조물이 있는 경우 등에는 추가 비용이 발생할 수 있습니다.
-                    이때는 공사 전 미리 안내하고 동의 후 진행하는 방식을 권장드립니다.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">카드 결제나 세금계산서 발행이 가능한가요?</div>
-                <div class="faq-a">
-                    대부분의 기업/자영업 고객이 비용 처리를 위해 필요로 하므로, 카드 결제/계산서 발행이 가능한 파트너를 우선 매칭하는 방식이 좋습니다.
-                </div>
-            </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">견적 신청은 무료인가요?</div>
+          <div class="faq-a">네, 온라인 견적 신청은 무료입니다. 실제 정책은 귀하의 서비스 조건에 맞게 수정하세요.</div>
         </div>
+        <div class="faq-item">
+          <div class="faq-q">추가 비용은 언제 발생하나요?</div>
+          <div class="faq-a">도면과 현장이 크게 다른 경우, 숨겨진 구조물이 있는 경우 등에는 추가 비용이 발생할 수 있습니다. 공사 전 안내/동의 후 진행을 권장합니다.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">카드 결제나 세금계산서 발행이 가능한가요?</div>
+          <div class="faq-a">대부분 가능하도록 파트너를 매칭하는 방식이 좋습니다. 비용 처리 수요가 많기 때문입니다.</div>
+        </div>
+      </div>
     </section>
 
     <!-- BOTTOM CTA -->
     <section class="cta-bottom" id="contact">
-        <div>
-            <div class="section-kicker">지금 바로</div>
-            <div class="cta-title">진주 철거 · 원상복구, 한 번의 신청으로 끝내세요</div>
-            <p class="cta-sub">
-                점포 사진 몇 장과 기본 정보만 남겨주시면,<br>
-                검증된 철거업체의 비교 견적을 받아보실 수 있습니다.
-            </p>
-        </div>
-        <div class="cta-right">
-            <!-- <a class="btn-primary" href="https://tally.so" target="_blank" rel="noopener">
-                무료 견적 신청하기
-            </a> -->
-            <a class="btn-primary" href="tel:010-5069-9139" target="_blank" rel="noopener">
-                무료 견적 신청하기
-            </a>
-            <!-- <div class="cta-note">
-                * 이 버튼 링크를 실제 Tally/폼 URL로 바꿔 사용하세요.
-            </div> -->
-        </div>
+      <div>
+        <div class="section-kicker">지금 바로</div>
+        <div class="cta-title">진주 철거 · 원상복구, 한 번의 신청으로 끝내세요</div>
+        <p class="cta-sub">
+          점포 사진 몇 장과 기본 정보만 남겨주시면,<br />
+          검증된 철거업체의 비교 견적을 받아보실 수 있습니다.
+        </p>
+      </div>
+      <div class="cta-right">
+        <a class="btn-primary" href="tel:010-5069-9139" rel="noopener">무료 견적 신청하기</a>
+      </div>
     </section>
 
+    <!-- ✅ MAP -->
     <section id="map-section" style="padding: 50px 20px; background-color: #f9f9f9;">
-        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-            <div class="section-kicker">오시는 길</div>
-            <h2 class="section-title">한강고철 위치 안내</h2>
-        </div>
-        <div id="map" style="width:100%; max-width:1200px; height:400px; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+      <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+        <div class="section-kicker">오시는 길</div>
+        <h2 class="section-title">한강고철 위치 안내</h2>
+      </div>
+      <div id="map"
+        style="width:100%; max-width:1200px; height:400px; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
+  <footer>
     <div class="footer-inner">
-        <div>
-            <strong>한강고철</strong><br>
-            <span>대표자: 박다민</span>
-        </div>
-        <div class="footer-links">
-            <a href="javascript:void(0);" id="footer-top"><strong>↑</strong></a>
-            <!-- <span>·</span>
-            <a href="#faq">FAQ</a>
-            <span>·</span>
-            <a href="#contact">문의</a> -->
-        </div>
+      <div>
+        <strong>한강고철</strong><br />
+        <span>대표자: 박다민</span>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="js-scroll" id="footer-top"><strong>↑</strong></a>
+      </div>
     </div>
-</footer>
+  </footer>
 
-<div class="floating-banner">
+  <div class="floating-banner">
     <a href="tel:010-5069-9139" class="float-item tel">
-        <span class="icon1">📞</span>
-        <span class="label">실시간<br>전화상담</span>
+      <span class="icon1">📞</span>
+      <span class="label">실시간<br />전화상담</span>
     </a>
-    <a href="https://pf.kakao.com/..." target="_blank" class="float-item kakao">
-        <img src="assets/images/KakaoTalk_logo.svg" alt="카카오톡" class="float-img">
-        <span class="label">실시간<br>채팅상담</span>
+    <a href="https://pf.kakao.com/..." target="_blank" class="float-item kakao" rel="noopener">
+      <img src="assets/images/KakaoTalk_logo.svg" alt="카카오톡" class="float-img" />
+      <span class="label">실시간<br />채팅상담</span>
     </a>
-    <a href="https://blog.naver.com/lonely_fist" target="_blank" class="float-item blog">
-        <span class="icon2">blog</span>
-        <span class="label">블로그<br>바로가기</span>
+    <a href="https://blog.naver.com/lonely_fist" target="_blank" class="float-item blog" rel="noopener">
+      <span class="icon2">blog</span>
+      <span class="label">블로그<br />바로가기</span>
     </a>
-    <a href="javascript:void(0);" id="go-top" class="float-item top-btn">
-        <span class="label">TOP</span>
+    <a href="#top" id="go-top" class="float-item top-btn js-scroll">
+      <span class="label">TOP</span>
     </a>
-</div>
+  </div>
 
+  <!-- ✅ 1) Kakao Map SDK: https 권장 -->
+  <!-- ⚠️ 카카오 Developers에서 "플랫폼(Web) > 사이트 도메인"에 GitHub Pages 도메인 등록 안 하면 지도 안 뜸 -->
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0d626426339fe5291bc20cd491822cb4&libraries=services&autoload=false"></script>
+
+  <!-- ✅ 2) JS는 딱 1개로 통합 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // -------------------------
+      // (A) 부드러운 스크롤 (a[href^="#"] 통일)
+      // -------------------------
+      document.querySelectorAll('a.js-scroll[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          const targetId = a.getAttribute('href');
+          const targetEl = document.querySelector(targetId);
+          if (!targetEl) return;
+
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      // -------------------------
+      // (B) Kakao Map init
+      // -------------------------
+      if (window.kakao && kakao.maps && typeof kakao.maps.load === 'function') {
+        kakao.maps.load(function () {
+          const mapContainer = document.getElementById('map');
+          if (!mapContainer) return;
+
+          const center = new kakao.maps.LatLng(35.1764, 128.1068);
+
+          const mapOption = {
+            center: center,
+            level: 3
+          };
+
+          const map = new kakao.maps.Map(mapContainer, mapOption);
+
+          const marker = new kakao.maps.Marker({ position: center });
+          marker.setMap(map);
+
+          const iwContent = '<div style="padding:10px; font-size:14px; text-align:center; min-width:150px;">한강고철</div>';
+          const infowindow = new kakao.maps.InfoWindow({
+            content: iwContent,
+            removable: true
+          });
+
+          kakao.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+          });
+        });
+      } else {
+        // SDK가 로드되지 않았을 때 콘솔에서 바로 원인 찾기 좋게
+        console.error('Kakao Maps SDK가 로드되지 않았습니다. appkey/도메인 등록/스크립트 로딩을 확인하세요.');
+      }
+    });
+  </script>
 </body>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d626426339fe5291bc20cd491822cb4"></script>
-
-<script>
-    // 1. 카카오맵 초기화
-    var mapContainer = document.getElementById('map'), 
-        mapOption = { 
-            center: new kakao.maps.LatLng(35.1764, 128.1068), // 진주 시청 근처 예시 좌표
-            level: 3 
-        };
-
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-    // 2. 마커 표시
-    var markerPosition  = new kakao.maps.LatLng(35.1764, 128.1068); 
-    var marker = new kakao.maps.Marker({
-        position: markerPosition
-    });
-    marker.setMap(map);
-
-    // 3. 인포윈도우 (선택 사항: 클릭 시 이름 표시)
-    var iwContent = '<div style="padding:5px; font-size:14px; text-align:center;">한강고철</div>',
-        iwRemoveable = true;
-
-    var infowindow = new kakao.maps.InfoWindow({
-        content : iwContent,
-        removable : iwRemoveable
-    });
-    
-    // 마커 클릭 시 인포윈도우 표시
-    kakao.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map, marker);  
-    });
-
-    // --- 기존 스크립트 유지 ---
-    document.getElementById('go-top').addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    // ... 나머지 기존 스크립트 코드 ...
-</script>
-
-<script>
-    document.getElementById('go-top').addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    // 로고 클릭 시 최상단 이동 추가
-    document.getElementById('logo-scroll').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    //'맨 위로' 클릭 시 최상단 이동
-    document.getElementById('footer-top').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    //'이용 안내' 클릭 시 위치 이동
-    document.getElementById('how').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 1400,
-            behavior: 'smooth'
-        });
-    });
-
-    //'시공 사례' 클릭 시 위치 이동
-    document.getElementById('portfolio').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 2250,
-            behavior: 'smooth'
-        });
-    });
-
-    //'시공비 예시' 클릭 시 위치 이동
-    document.getElementById('pricing').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 2530,
-            behavior: 'smooth'
-        });
-    });
-
-    //'이용 후기' 클릭 시 위치 이동
-    document.getElementById('reviews').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 2900,
-            behavior: 'smooth'
-        });
-    });
-
-    //'FAQ' 클릭 시 위치 이동
-    document.getElementById('faq').addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 링크 동작 방지
-        window.scrollTo({
-            top: 3300,
-            behavior: 'smooth'
-        });
-    });
-</script>
 </html>
